@@ -2,15 +2,9 @@ package foo
 
 import bar.baz._
 
-class Foo {
-  def foo(): String = {
-    "STRING"
-  }
-}
-
 object HelloWorld {
   def main(args: Array[String]) {
-    val a:Foo[Bar] = b;
-    println(t("Hello, world!"))
+    val str:String = "Hello, world!"
+    println(str)
   }
 }
