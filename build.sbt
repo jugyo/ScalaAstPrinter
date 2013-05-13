@@ -1,4 +1,4 @@
-name := "tree_printer"
+name := "scala_ast_printer"
 
 version := "1.0"
 
