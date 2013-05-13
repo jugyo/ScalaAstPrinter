@@ -1,12 +1,13 @@
-package org.jugyo
+package org.jugyo.scala.parsing.ast
 
 import scala.collection.mutable.HashMap
 import scala.tools.nsc.{ast, Settings}
 import scala.tools.nsc.interpreter._
 import scala.tools.nsc.util.BatchSourceFile
 import scala.util.parsing.json.{JSONArray, JSONObject}
+import scala.io.Source
 
-class TreePrinter {
+class Printer {
   val settings = new Settings()
   settings.usejavacp.value = true
   val main = new IMain(settings)

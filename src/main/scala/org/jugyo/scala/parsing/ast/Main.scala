@@ -1,7 +1,7 @@
-package org.jugyo
+package org.jugyo.scala.parsing.ast
 
 import scala.io.Source
-import scala.util.parsing.json._
+import scala.util.parsing.json.{JSONArray, JSONObject}
 
 object Main {
   def main(args: Array[String]) {
@@ -14,7 +14,7 @@ object Main {
     val code = file.mkString
     file.close()
 
-    val parser = new TreePrinter()
+    val parser = new Printer()
     val tree = parser.parse(code)
 
     val result = parser.Tree2JSONObject.convert(tree)
