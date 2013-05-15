@@ -57,7 +57,7 @@ class Printer {
         case Ident(name) =>
           hashMap += ("name" -> name.toString())
         case Literal(x) =>
-          hashMap += ("value" -> x.escapedStringValue)
+          hashMap += ("value" -> x.value.toString())
         case _ =>
       }
 
